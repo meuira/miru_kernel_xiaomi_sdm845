@@ -45,7 +45,7 @@ MAKE_ARGS=(
 	CROSS_COMPILE="aarch64-linux-gnu-"
 	CROSS_COMPILE_ARM32="arm-linux-gnueabi-"
 	CLANG_TRIPLE="aarch64-linux-gnu-"
-	LOCALVERSION="-Etude"
+	LOCALVERSION="-美瑠/${KERNEL_NAME}"
 )
 
 hard_clean() {
