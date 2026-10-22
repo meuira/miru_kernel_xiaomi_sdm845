@@ -17,8 +17,6 @@ KERNEL_NAME="android-10-8"
 
 DO_CLEAN="true"
 
-export TZ='Asia/Jakarta'
-
 export PATH="${CLANG_BIN}:${PATH}"
 export ARCH="${ARCH}"
 export SUBARCH="${ARCH}"
