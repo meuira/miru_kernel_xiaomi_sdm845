@@ -13,7 +13,7 @@ ARCH="arm64"
 
 DEFCONFIG="beryllium_defconfig"
 KERNEL_IMAGE="Image.gz-dtb"
-KERNEL_NAME="perf"
+KERNEL_NAME="android-10-8"
 
 DO_CLEAN="true"
 
@@ -22,8 +22,8 @@ export TZ='Asia/Jakarta'
 export PATH="${CLANG_BIN}:${PATH}"
 export ARCH="${ARCH}"
 export SUBARCH="${ARCH}"
-export KBUILD_BUILD_USER=miru
-export KBUILD_BUILD_HOST=archlinux
+export KBUILD_BUILD_USER=build-user
+export KBUILD_BUILD_HOST=build-host
 
 MAKE_ARGS=(
 	O="${OUT_DIR}"
@@ -81,7 +81,7 @@ build_kernel() {
 package_anykernel() {
 	echo "Packaging kernel with AnyKernel3"
 
-	local current_kernel_name="Perf"
+	local current_kernel_name="Android-Kernel"
 
 	if [ -d "${ANYKERNEL_DIR}" ]; then
 		cd "${ANYKERNEL_DIR}"
